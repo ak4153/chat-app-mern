@@ -1,0 +1,120 @@
+.chat {
+    display: flex;
+    flex-flow: column;
+    flex: 0.65;
+}
+
+.chat__header {
+    padding: 0.3em;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.chat__headerInfo {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.chat__headerInfo>h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.chat__headerInfo>p {
+    color: gray;
+    margin: 0;
+}
+
+.chat__headerRight {
+    display: flex;
+}
+
+.chatBody {
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+    background-repeat: repeat;
+    background-position: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: scroll;
+    padding: 30px;
+}
+
+.chat__message {
+    display: relative;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.chat__receiver {
+    background-color: #dcf8c6;
+    margin-left: auto;
+}
+
+.chat__name {
+    position: relative;
+    padding-right: 5px;
+    font-weight: 800;
+    font-size: 0.8em;
+}
+
+.chat__time {
+    font-size: xx-small;
+    margin-left: 10px;
+    margin-right: 0.3em;
+}
+
+.chat__inputArea {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    bottom: 0;
+    flex: 1;
+    width: 500px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.chat__inputContainer {
+    display: flex;
+    position: relative;
+    width: 500px;
+    justify-content: left;
+    flex: 1;
+    align-items: center;
+}
+
+.chat__input {
+    border: none;
+    outline-width: 0;
+    width: 90%;
+    margin-left: 7px;
+    overflow: visible;
+    resize: none;
+}
+
+.chat__form {
+    width: inherit;
+    height: inherit;
+    display: inherit;
+}
+
+.chat__form>.MuiIconButton-root {
+    padding: 0;
+}
+
+.chat__formButton {
+    outline: none;
+    border: none;
+    background-color: inherit;
+}
+
+.chat__formButton:hover {
+    cursor: pointer;
+}

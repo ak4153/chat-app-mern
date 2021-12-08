@@ -1,0 +1,29 @@
+.login {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.login__container {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    border: black 1px solid;
+    margin: 20px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+.login__container>img {
+    object-fit: contain;
+    width: 250px;
+    height: 250px;
+}
+
+.login__container>button {
+    margin-top: -3px;
+    text-transform: inherit !important;
+    background-color: #0a8d48 !important;
+    color: white;
+}
