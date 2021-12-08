@@ -18,7 +18,6 @@ const Login = () => {
         axios.post("https://chat-app-4153.herokuapp.com/signIn", {
           user: result.user,
         });
-        console.log(result.user);
       })
       .catch((err) => console.log(err));
   }

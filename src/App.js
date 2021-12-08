@@ -36,20 +36,16 @@ function App() {
     var channel = pusher.subscribe("messages");
     channel.bind("inserted", (data) => {
       setmessages([...messages, data]);
-      console.log("triger>>>", messages);
     });
     return () => {
       channel.unbind_all();
       channel.unsubscribe();
     };
   }, [messages]);
-  useEffect(() => {
-    console.log("refreshed");
-  }, [chatRoom]);
+  useEffect(() => {}, [chatRoom]);
 
   function handleClickRoom(room) {
     setChatRoom(room);
-    console.log("clicked", chatRoom);
   }
   function seed() {
     const rand = Math.floor(Math.random() * 5000);
