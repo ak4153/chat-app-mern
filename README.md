@@ -4,16 +4,14 @@ https://chatapp-501fb.web.app/
 
 <img src="/chat-app.png"/>
 
-<<<<<<< HEAD
 #Chatting app
 Tech used:
 
 =======
 
-#Chatting app 
+#Chatting app
 Tech used:
 
->>>>>>> de10de1f53e498e21168f78b17d95c2178e870d9
 - React
 - Express + Axios
 - NodeJS
@@ -21,15 +19,6 @@ Tech used:
 - Pusher for messages
 - Mongose for storing messages
 
-<<<<<<< HEAD
-=======
-
-=======
-
-=======
-
-
->>>>>>> de10de1f53e498e21168f78b17d95c2178e870d9
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
