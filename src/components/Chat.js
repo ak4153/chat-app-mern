@@ -17,6 +17,7 @@ const Chat = ({ messages, chatRoom, seed }) => {
   const roomName = chatRoom;
   const [input, setInput] = useState("");
   const [{ user }, dispatch] = useStateValue();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios.post("https://chat-app-4153.herokuapp.com/messages/new", {
@@ -28,6 +29,15 @@ const Chat = ({ messages, chatRoom, seed }) => {
     });
     setInput("");
   };
+
+  useEffect(() => {
+    //chatBody div always on first chat
+    const chatBody = document.getElementsByClassName("chatBody");
+    const scrollHeight = chatBody[0].scrollHeight;
+    const clientHeight = chatBody[0].clientHeight;
+    const clientScroll = scrollHeight - clientHeight;
+    chatBody[0].scrollTop = clientScroll;
+  });
 
   return (
     <div className="chat">
